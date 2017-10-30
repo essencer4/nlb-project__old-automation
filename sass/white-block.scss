@@ -1,0 +1,610 @@
+.white-block {
+  background-color: white;
+  margin: 20px;
+  padding: 15px;
+  border-radius: 20px;
+  &--flex-column {
+    display: flex;
+    flex-direction: column;
+  }
+  &--flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+.white-block__text {
+  font-family: "PT Sans", Arial, sans-serif;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: black;
+  text-transform: none;
+  text-align: justify;
+  text-indent: 15px;
+  line-height: 20px;
+  &--right { //для блока авторы (биографии)
+    float: right;
+  }
+  &--left { //для блока авторы (интервью)
+    width: 100%;
+    text-align: left;
+    padding: 0px 0px;
+    margin: 25px 0px;
+  }
+  &--left { //для блока авторы (интервью)
+    color: grey;
+  }
+}
+
+.white-block__h2 {
+  font-family: "PT Sans", Arial, sans-serif;
+  margin-top: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: 0.5px;
+  &--right { //для блока авторы (биографии)
+    float: right;
+    text-transform: none;
+  }
+  &--left { //для блока авторы (интервью)
+    text-transform: none;
+    width: 88%;
+    text-align: left;
+    padding: 0px 15px;
+    margin: 25px 0px;
+  }
+}
+
+.white-block__photo {
+  float: left;
+}
+
+.white-block__button {
+  display: block;
+  width: 280px;
+  margin: 30px auto;
+  padding: 10px 25px;
+  text-decoration: none;
+  color: #fff;
+  background-color: $main-dark-blue;
+  border-radius: 5px;
+  &:hover {
+    background-color: $main-dark-blue-hover;
+  }
+  &:active {
+    background-color: $main-dark-blue-2;
+  }
+}
+
+.white-block__button--short {
+  width: 250px;
+}
+
+.white-block__button span {
+  display: block;
+  margin: 0 auto;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.white-block__list li {
+  font-family: "PT Sans", Arial, sans-serif;
+  text-transform: none;
+  margin: 10px 0px;
+  text-align: justify;
+}
+
+/* Блок для страницы контакты  */
+
+.vk-group {
+  display: flex;
+  flex-direction: column;
+  float: left;
+  width: 500px;
+  height: 560px;
+  margin-left: 40px;
+  margin-top: 30px;
+}
+
+.vk-group #vk_groups,
+.vk-group #vk_groups iframe {
+    width: 500px !important;
+    height: 450px !important;
+}
+
+.fb-group {
+  display: flex;
+  flex-direction: column;
+  float: left;
+  height: 560px;
+  margin-left: 25px;
+  margin-top: 30px;
+}
+
+.fb-group__index {
+  width: 100%;
+  height: 450px;
+  display: flex;
+  justify-content: center;
+  margin: 0px 350px;
+}
+
+#fb-root iframe {
+    height: 200px !important;
+    border-bottom: 1px solid #AAA !important;
+}
+
+.twit-group {
+  display: flex;
+  flex-direction: column;
+  float: left;
+  height: 525px;
+  margin-left: 25px;
+  margin-top: 30px;
+}
+
+.youtube-group {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  float: left;
+  width: 500px;
+  height: 525px;
+  margin-left: 40px;
+  margin-top: 30px;
+}
+
+.youtube-group__video {
+  width: 245px;
+  height: 205px;
+    @media (min-width: $tablet-widths) {
+      width: 300px;
+      height: 205px;
+    }
+    @media (min-width: $desktop-widths) {
+      width: 400px;
+      height: 205px;
+    }
+}
+
+.photo-three-line__in-white-block {
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.photo-three-line__in-white-block a img {
+  border-radius: 10px;
+}
+
+.white-block__steam-widget {
+  margin-top: 30px;
+  height: 200px;
+}
+
+.white-block__steam-widget-position {
+  display: flex;
+  justify-content: center;
+}
+
+.white-block__steam-widget-position--mobile-hidden {
+  display: flex;
+    @media (max-width: $mobile-widths) {
+      display: none;
+    }
+}
+
+.white-block__button--mobile-displayed {
+  display: none;
+    @media (max-width: $mobile-widths) {
+      display: block;
+    }
+}
+
+/* Блок для страницы прочее */
+
+.white-block__donation-block-1 {
+   width: 450px;
+  height: 198px;
+}
+
+.white-block__donation-block-2 {
+  float: left;
+  margin: 20px 5px 5px 55px;
+  width: 130px;
+  height: 65px;
+  border: none;
+}
+
+.white-block__donation-block-3 {
+  float: left;
+  margin: 20px 5px 5px 23px;
+  width: 195px;
+  height: 65px;
+  border: none;
+}
+
+.white-block__button-contacts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 96%;
+  height: 50px;
+  box-sizing: border-box;
+  margin: 15px 10px;
+  padding: 15px 20px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #051471;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.white-block__button-contacts:hover {
+  background-color: #4458D6;
+  color: white !important;
+}
+
+.white-block__background-others-monster {
+  background-image: url("../img/others-games-1-background.jpg");
+  background-size: cover;
+}
+
+.white-block__background-others-aldar {
+  background-image: url("../img/others-games-2-background.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.white-block__background-others-zog {
+  background-image: url("../img/others-games-3-background.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.white-block__background-others-red {
+  background-image: url("../img/games-red-background.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.white-block__background-others-island {
+  background-image: url("../img/games-island-background.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.white-block__background-others-caves {
+  background-image: url("../img/games-barbarian-background.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+@media (max-width: $mobile-widths) {
+  .white-block {
+    padding: 6px;
+}
+
+  .white-block__button {
+    width: 194px;
+}
+
+  .white-block__h2--right {
+    width: 245px;
+    margin: 25px 0px 5px 0px;
+    font-size: 20px;
+}
+
+  .white-block__text--right {
+    width: 245px;
+    margin: 10px 0px 15px 0px;
+}
+
+  .white-block__photo {
+    margin: 15px 45px 0px 45px;
+}
+
+  .vk-group {
+    width: 245px;
+    margin-left: 0px;
+    margin-top: 0px;
+}
+
+  .vk-group #vk_groups,
+  .vk-group #vk_groups iframe {
+    width: 245px !important;
+    height: 450px !important;
+}
+
+  .fb-group {
+    width: 245px;
+    margin-left: 0px;
+    margin-top: 0px;
+}
+
+  .fb-group__index {
+    width: 285px;
+    margin: 0px 14.5px;
+}
+
+  .fb-group .fb-page .fb_iframe_widget iframe {
+    width: 245px;
+
+}
+
+  .fb-group .fb_iframe_widget iframe {
+    width: 245px;
+}
+
+  .twit-group {
+    width: 245px;
+    margin-left: 0px;
+    margin-top: 0px;
+}
+
+  .twit-group_index-page {
+    width: 285px;
+    margin: 0px 6.5px;
+}
+
+  .youtube-group {
+    width: 245px;
+    margin-left: 0px;
+    margin-top: 0px;
+}
+
+  .vk-group-section__widget-position-contacts {
+    width: 245px;
+}
+
+  .photo-three-line__in-white-block {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+  .photo-three-line__in-white-block a img {
+    width: 234px;
+    height: 140px;
+    margin: 5px 0px;
+}
+
+  .photo-three-line__in-white-block a:nth-child(3) img {
+    display: none;
+}
+
+  .white-block__list {
+    padding-left: 20px;
+}
+
+  .white-block__steam-widget iframe {
+    width: 235px;
+}
+
+  .white-block__steam-widget {
+    width: 235px;
+}
+
+  .white-block--flex-row {
+    flex-direction: column;
+}
+
+  .white-block__donation-block-1 {
+    width: 245px;
+    height: 198px;
+    transform: scale(0.9);
+}
+
+  .white-block__donation-block-1-big {
+    display: none;
+}
+
+  .white-block__donation-block-1-small {
+    display: block;
+    margin: 20px 0px;
+}
+
+  .white-block__text {
+    font-size: 16px;
+}
+
+  .white-block__list {
+    font-size: 16px;
+}
+
+  .white-block__background-others-monster {
+    background-position: 34% 50%;
+}
+}
+
+@media (min-width: $tablet-widths) {
+  .white-block__h2--right {
+    width: 520px;
+    margin-top: 15px;
+    padding: 0px 61px;
+    box-sizing: border-box;
+}
+
+  .white-block__text--right {
+    width: 520px;
+    margin-top: 5px;
+}
+
+  .white-block__photo {
+    margin: 10px;
+}
+
+  .vk-group {
+    width: 300px;
+}
+
+  .vk-group #vk_groups,
+  .vk-group #vk_groups iframe {
+    width: 300px !important;
+    height: 450px !important;
+}
+
+  .fb-group {
+    width: 300px;
+}
+
+  .fb-group__index {
+    width: 500px;
+    margin: 0px 130px;
+}
+
+  .twit-group {
+    width: 300px;
+}
+
+  .twit-group_index-page {
+    width: 727px;
+    margin: 0px 8px;
+}
+
+  .youtube-group {
+    width: 300px;
+}
+
+  .vk-group-section__widget-position-contacts {
+    width: 300px;
+}
+
+  .photo-three-line__in-white-block a img {
+    width: 228px;
+    height: 135px;
+}
+
+  .white-block__steam-widget iframe {
+    width: 600px;
+}
+
+  .white-block__steam-widget {
+    width: 600px;
+}
+
+  .white-block__donation-block-1-big {
+    display: block;
+  }
+
+  .white-block__donation-block-1-small {
+    display: none;
+  }
+
+  .white-block__text {
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .white-block__list {
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .white-block__background-others-monster {
+    background-position: 50% 50%;
+}
+}
+
+@media (min-width: $desktop-widths) {
+  .white-block__h2--right {
+    width: 900px;
+    margin-top: 25px;
+}
+
+  .white-block__text--right {
+    width: 900px;
+}
+
+  .white-block__photo {
+    margin: 20px;
+}
+
+  .vk-group {
+    width: 500px;
+}
+
+  .vk-group #vk_groups,
+  .vk-group #vk_groups iframe {
+    width: 500px !important;
+    height: 450px !important;
+}
+
+  .fb-group {
+    width: 500px;
+}
+
+  .fb-group__index {
+    width: 500px;
+    margin: 0px 350px;
+}
+
+  .twit-group {
+    width: 500px;
+}
+
+  .twit-group_index-page {
+    width: 820px;
+    margin: 0px 177px;
+}
+
+  .youtube-group {
+    width: 500px;
+}
+
+  .vk-group-section__widget-position-contacts {
+    width: 500px;
+}
+
+  .photo-three-line__in-white-block {
+    justify-content: space-around;
+}
+
+  .photo-three-line__in-white-block a img {
+    width: 360px;
+    height: 195px;
+}
+
+  .white-block__steam-widget iframe {
+    width: 650px;
+}
+
+  .white-block__steam-widget {
+    width: 650px;
+}
+
+  .white-block__donation-block-1-big {
+    display: block;
+  }
+
+  .white-block__donation-block-1-small {
+    display: none;
+  }
+
+  .white-block__text {
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .white-block__list {
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .white-block__background-others-monster {
+    background-position: 50% 50%;
+}
+
+  .white-block__button--short {
+    width: 280px;
+}
+}

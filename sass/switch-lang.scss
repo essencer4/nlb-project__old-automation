@@ -1,0 +1,106 @@
+.switch-lang__block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.switch-lang {
+  float: right;
+  text-decoration: none;
+  color: #fff;
+  background-color: #051471;
+  border-radius: 40px 5px;
+  text-align: center;
+  opacity: 0.75;
+  text-transform: none;
+}
+
+.switch-lang p {
+  text-align: center;
+  margin: 0px;
+  padding: 20px 40px;
+  line-height: 1.5;
+  font-size: 28px;
+  letter-spacing: 1.5px;
+}
+
+.switch-lang:hover {
+  background-color: #4458D6;
+  color: white !important;
+}
+
+.switch-lang:active p {
+  opacity: 0.5;
+}
+
+.eng-switch {
+  border-bottom: 8px solid white;
+  border-right: 4px solid white;
+}
+
+.rus-switch {
+  border-bottom: 8px solid white;
+  border-right: 4px solid white;
+}
+
+.switch-activated {
+  text-decoration: underline;
+}
+
+@media (max-width: $mobile-widths) {
+  .switch-lang__block {
+    width: 294px;
+    height: 70px;
+    margin: 0px 10px 10px 10px;
+    flex-direction: row;
+}
+
+  .switch-lang {
+    border-radius: 0px 0px;
+}
+
+  .eng-switch {
+    border-radius: 5px 40px;
+    border-bottom: 8px solid white;
+    border-left: 4px solid white;
+    border-right: none;
+}
+
+  .rus-switch {
+    border-radius: 40px 5px;
+}
+
+  .switch-lang p {
+    padding: 10px 25px;
+    font-size: 28px;
+}
+
+}
+
+@media (min-width: $tablet-widths) {
+  .switch-lang__block {
+    width: 130px;
+    height: 180px;
+    margin: 0px 20px 20px 0px;
+}
+
+  .switch-lang p {
+    padding: 15px 30px;
+    font-size: 28px;
+}
+
+}
+
+@media (min-width: $desktop-widths) {
+  .switch-lang__block {
+    width: 140px;
+    height: 200px;
+    margin: 0px 25px 25px 0px;
+}
+
+  .switch-lang p {
+    padding: 15px 35px;
+    font-size: 32px;
+}
+
+}

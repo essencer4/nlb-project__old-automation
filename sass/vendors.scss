@@ -1,0 +1,45 @@
+@-moz-document url-prefix() {
+
+  .game-preview__title {
+    font-size: 20px;
+    padding: 0px 5px;
+}
+
+  .game-preview__text {
+    font-size: 17px;
+}
+
+  .game-preview__button-details p {
+    font-size: 11px;
+}
+
+}
+
+/*
+@-moz-document url-prefix() {
+
+@media (max-width: $mobile-widths) {
+
+  .container .page-header .rus-switch {
+    left: -45px;
+}
+
+}
+
+@media (min-width: $tablet-widths) {
+
+  .page .container .page-header .rus-switch {
+    left: 160px;
+}
+
+}
+
+@media (min-width: $desktop-widths) {
+
+  .container .page-header .rus-switch {
+    left: 185px;
+}
+
+}
+
+}*/

@@ -1,0 +1,33 @@
+.container-page {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-top: 0px;
+  background: #4458D6;
+  border: 3px solid black;
+  border-top-style: none;
+  border-bottom-style: none;
+  box-sizing: border-box;
+  background-image: url("../img/2222.jpg");
+  background-repeat: repeat;
+  background-size: contain;
+}
+
+@media (max-width: $mobile-widths) {
+  .container-page {
+    width: 300px;
+    border: 1px solid black;
+}
+}
+
+@media (min-width: $tablet-widths) {
+  .container-page {
+    width: 750px;
+}
+}
+
+@media (min-width: $desktop-widths) {
+  .container-page {
+    width: 1180px;
+}
+}

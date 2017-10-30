@@ -1,0 +1,41 @@
+.trailers {
+  margin: 5px 0px;
+}
+
+.trailers__video {
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+@media (max-width: $mobile-widths) {
+
+  .trailers__video {
+    width: 285px;
+    height: 180px;
+    padding-bottom: 10px;
+}
+}
+
+@media (min-width: $tablet-widths) {
+  .trailers {
+    margin: -10px 0px;
+}
+
+  .trailers__video {
+    width: 640px;
+    height: 360px;
+}
+}
+
+@media (min-width: $desktop-widths) {
+  .trailers {
+    margin: -10px 0px;
+}
+
+  .trailers__video {
+    width: 900px;
+    height: 540px;
+}
+}
